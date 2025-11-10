@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="search-container">
+      <input type="text" id="city-input" placeholder="Enter a city name..." />
+      <button id="search-btn">Search</button>
+    </div>
+    <div id="weather-container">
+      <h2>Weather in <span id="city-name"></span></h2>
+      <div class="weather-info">
+        <img
+          src="images/temperature.png"
+          alt="Temperature"
+          class="weather-icon"
+        />
+        <p>Temperature: <span id="temperature">C</span></p>
+      </div>
+      <div class="weather-info">
+        <img src="images/humidity.png" alt="Humidity" class="weather-icon" />
+        <p>Humidity: <span id="humidity">%</span></p>
+      </div>
+      <div class="weather-info">
+        <img src="images/wind.png" alt="wind Speed" class="weather-icon" />
+        <p>Wind: <span id="wind">m/h</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
